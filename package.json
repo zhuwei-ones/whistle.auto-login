@@ -1,0 +1,40 @@
+{
+  "name": "whistle.auto-login",
+  "version": "1.0.0",
+  "description": "ONES 测试环境免登录",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "release": "standard-version",
+    "build": "tsc ",
+    "dev:w2": "w2 stop & lack watch & w2 run",
+    "dev": "tsc -w",
+    "prepublish": "npm run clean & npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cookie": "^0.5.1",
+    "cookie": "^0.5.0",
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-onerror": "^4.2.0",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "path": "^0.12.7",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.5",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  }
+}
